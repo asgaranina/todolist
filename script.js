@@ -16,10 +16,15 @@ document.addEventListener('DOMContentLoaded', function() {
         inputValue = input.value;
     }
 
-    function addItemToDoList(value) {
+    function createItemToDoList(value) {
         let li = document.createElement('li');
         li.classList.add('list__todo-item');
         li.textContent = value;
+        return li;
+    }
+
+    function addItemToList(list, item) {
+        list.append(item);
     }
 
     function btnClick() {
