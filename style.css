@@ -1,0 +1,76 @@
+/* для всего документа указывается применение алгоритма, при котором свойства width и height задают размеры блока, а не контента. Нужно, чтобы проще было располагать элементы */
+html {
+    box-sizing: border-box;
+  }
+  
+  /* Тут, если я правильно поняла то, что прочитала, уточняется, что псевдоэлементы тоже должны наследовать свойство box-sizing от родителя */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+    /* минимальная ширина body и нулевой margin чтобы бесконечно не сжималось содержимое body */
+    min-width: 320px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  
+    font-size: 16px;
+    font-style: normal;
+    color: black;
+    line-height: 1;
+}
+
+button, input {
+  font: inherit;
+  outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ol {
+    list-style: none;
+  }
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.main__heading {
+    padding: 15px;
+    font-size: 35px;
+}
+
+.item-add-input {
+    width: 300px;
+}
+
+.item-add-btn {
+    background: #fff;
+}
+
+.item-add-btn,
+.item-add-input {
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+.list__heading {
+    padding: 15px 0px;
+    font-size: 25px;
+}
+
+.list__item {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.list__done-item {
+    text-decoration: line-through;
+}
