@@ -47,7 +47,7 @@ ol {
 }
 
 .item-add-input {
-    width: 300px;
+    width: 307px;
 }
 
 .item-add-btn {
@@ -59,6 +59,20 @@ ol {
     padding: 15px;
     margin: 10px 0px;
     border-radius: 10px;
+    border: 1px solid #000; 
+    transition: background-color 0.2s ease;
+}
+
+.item-add-btn:hover,
+.item-add-input:hover,
+.item-add-btn:focus,
+.item-add-input:focus {
+    background-color: #DCDCDC;
+}
+
+.item-add-btn:active,
+.item-add-input:active {
+    background-color: #A9A9A9;
 }
 
 .list__heading {
@@ -69,6 +83,17 @@ ol {
 .list__item {
     font-size: 17px;
     line-height: 25px;
+    transition: color 0.2s ease;
+}
+
+.list__item:hover {
+    color: #A9A9A9;
+    cursor: pointer;
+}
+
+.list__item:active {
+    color: #696969;
+    cursor: pointer;
 }
 
 .list__done-item {
