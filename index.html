@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
     <title>ToDoList</title>
 </head>
 <body class="container">
     <h1 class="main__heading">ToDoList</h1>
-    <input type="text" class="item-add-input" placeholder="Нужно сделать...">
-    <button class="item-add-btn">➕</button>
+    <input type="text" class="item-add-input" id="item-add-input" placeholder="Нужно сделать..." required>
+    <button class="item-add-btn" id="item-add-btn">➕</button>
     <div class="list__todo-container">
         <h3 class="list__todo-heading list__heading">😼 Что еще предстоит сделать:</h3>
         <ol class="list__todo">
